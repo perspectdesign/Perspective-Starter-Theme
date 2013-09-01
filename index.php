@@ -8,12 +8,34 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package MyTheme
+ * @package perspective
  */
-
-<?php get_header(); ?>
+get_header(); ?>
 
 <main>
+	<?php if ( have_posts() ) : ?>
+
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
+
+			<?php endwhile; ?>
+
+			<?php perspective_content_nav( 'nav-below' ); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'no-results', 'index' ); ?>
+
+		<?php endif; ?>
+		
     <article>
         <header>
             <h1>article header h1</h1>
@@ -52,6 +74,7 @@
         </footer>
     </article>
 </main>
+<!-- End Main Body -->
 
 <?php get_sidebar(); ?>
 

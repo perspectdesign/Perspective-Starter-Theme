@@ -30,14 +30,15 @@
 	<div class="header-container">
 		<?php do_action( 'before' ); ?>
 	    <header class="wrapper clearfix">
-	        <h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-	        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	        <div class="banner">
+		        <h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+	        </div>
 	        <nav>
 	        	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 	        </nav>
 	    </header>
 	</div><!-- End Header Section -->
 
-	<!-- Main Body -->
     <div class="main-container">
         <div class="main wrapper clearfix">

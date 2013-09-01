@@ -430,12 +430,19 @@ body {
 .main aside {
   border-top: 20px solid #e44d26;
 }
+.main aside {
+  margin-bottom: 20px;
+}
 .header-container,
 .footer-container,
 .main aside {
   background: #f16529;
 }
-.title {
+.title a {
+  color: white;
+  text-decoration: none;
+}
+.site-description {
   color: white;
 }
 /* ==============
@@ -444,6 +451,9 @@ body {
 nav ul {
   margin: 0;
   padding: 0;
+}
+nav ul li {
+  list-style: none;
 }
 nav a {
   display: block;
@@ -530,12 +540,13 @@ nav a:hover {
   /* ============
       WIDE: Menu
      ============ */
-  .title {
+  .banner {
     float: left;
   }
   nav {
     float: right;
     width: 38%;
+    margin-top: 40px;
   }
   /* ============
       WIDE: Main
@@ -544,7 +555,7 @@ nav a:hover {
     float: left;
     width: 57%;
   }
-  .main sidebar {
+  .main aside {
     float: right;
     width: 28%;
   }

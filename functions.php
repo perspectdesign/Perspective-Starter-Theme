@@ -2,7 +2,7 @@
 /**
  * Perspective functions and definitions
  *
- * @package Perspective
+ * @package perspective
  */
  
  if ( ! function_exists( 'perspective_setup' ) ) :
@@ -65,8 +65,8 @@ function perspective_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'perspective' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside>',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3">',
 		'after_title'   => '</h3>',
 	) );
@@ -78,7 +78,7 @@ add_action( 'widgets_init', 'perspective_widgets_init' );
  */
 function perspective_scripts() {
 	// Add stylesheets
-	wp_enqueue_style( 'perspective-style', get_stylesheet_uri() . 'css/perspective.css', false, null );
+	wp_enqueue_style( 'perspective-style', get_template_directory_uri() . '/css/perspective.css', false, null );
 	
 	// Add scripts
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js', false, null, false);
