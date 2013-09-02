@@ -520,6 +520,7 @@ nav.primary a:hover {
 }
 nav.primary a:hover {
   text-decoration: none;
+  background: #f16529;
 }
 /* ==============
     MOBILE: Main
@@ -586,12 +587,20 @@ input#submit:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
+  nav.primary {
+    background-color: #e44d26;
+    width: 100%;
+    float: left;
+  }
   nav.primary a {
     float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
+    width: auto;
+    margin-right: 5px;
+    padding: 20px 10px;
     margin-bottom: 0;
+  }
+  nav.primary li {
+    padding: 0;
   }
   nav.primary li:first-child a {
     margin-left: 0;
@@ -619,17 +628,7 @@ input#submit:hover {
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;
   }
-  /* ============
-      WIDE: Menu
-     ============ */
-  .banner {
-    float: left;
-  }
-  nav.primary {
-    float: right;
-    width: 38%;
-    margin-top: 60px;
-  }
+  /* WIDE: Menu (moved to  min-width: 1140px) */
   /* ============
       WIDE: Main
      ============ */
@@ -649,6 +648,21 @@ input#submit:hover {
   .wrapper {
     width: 1026px;
     margin: 0 auto;
+  }
+  /* ============
+      WIDE: Menu (moved from min-width: 768px)
+     ============ */
+  .banner {
+    float: left;
+  }
+  nav.primary {
+    float: right;
+    width: auto;
+    margin-top: 60px;
+  }
+  nav.primary a {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 /* ==========================================================================

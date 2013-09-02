@@ -8,12 +8,22 @@
     INTERMEDIATE: Menu
    ==================== */
 
+	nav.primary {
+		background-color: @secondaryColor;
+		width: 100%;
+		float: left;
+	}    
+	
     nav.primary a {
         float: left;
         width: @linkWidthInt;
-        margin: 0 1.7%;
-        padding: 25px 2%;
+        margin-right: 5px;
+        padding: 20px 10px;
         margin-bottom: 0;
+    }
+    
+    nav.primary li {
+	    padding: 0;
     }
 
     nav.primary li:first-child a {
@@ -50,19 +60,7 @@
                 box-shadow: 0 5px 10px #aaa;
     }
 
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .banner {
-        float: @bannerFloat;
-    }
-
-    nav.primary {
-        float: @navFloat;
-        width: @navWidthWide;
-		margin-top: 60px;
-    }
+/* WIDE: Menu (moved to  min-width: 1140px) */
 
 /* ============
     WIDE: Main
@@ -88,5 +86,24 @@
     .wrapper {
         width: @maxWidth;
         margin: 0 auto;
+    }
+    
+/* ============
+    WIDE: Menu (moved from min-width: 768px)
+   ============ */
+
+    .banner {
+        float: @bannerFloat;
+    }
+
+    nav.primary {
+        float: @navFloat;
+        width: @navWidthWide;
+		margin-top: 60px;
+    }
+    
+    nav.primary a {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
     }
 }
