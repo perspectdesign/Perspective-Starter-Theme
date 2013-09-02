@@ -6,6 +6,16 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+body a {
+	color: @linkColor;
+	font-weight: @linkWeight;
+	text-decoration: @linkDecoration;
+}
+
+body a:hover {
+	color: @linkColorHover;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -16,12 +26,12 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid @secondaryColor;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid @secondaryColor;
 }
 
 .main aside {
@@ -31,7 +41,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: @primaryColor;
 }
 
 .title a {
@@ -65,7 +75,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: @secondaryColor;
 }
 
 nav a:hover,
@@ -74,7 +84,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    text-decoration: underline;
+	text-decoration: @linkDecoration;
 }
 
 /* ==============

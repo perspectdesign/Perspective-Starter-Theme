@@ -364,6 +364,9 @@ table {
   border-spacing: 0;
 }
 /* ==========================================================================
+   Variables
+   ========================================================================== */
+/* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html,
@@ -415,6 +418,14 @@ textarea {
    ========================================================================== */
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+body a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+body a:hover {
+  color: #e44d26;
 }
 .wrapper {
   width: 90%;
@@ -470,7 +481,7 @@ nav a:visited {
   color: white;
 }
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* ==============
     MOBILE: Main
