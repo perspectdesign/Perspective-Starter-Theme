@@ -490,7 +490,8 @@ article a,
 .error a {
   color: #000000;
 }
-.post-info {
+.post-info,
+article footer {
   background: #eeeeee;
   padding-left: 5px;
 }
