@@ -9,7 +9,7 @@
 		<h1><?php the_title(); ?></h1>
 
 		<div>
-			<?php perspective_posted_on(); ?>
+			<i class="icon-time"></i> <?php perspective_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

@@ -10,7 +10,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div>
-			<?php perspective_posted_on(); ?>
+			<i class="icon-time"></i> <?php perspective_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -21,10 +21,10 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<section>
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'perspective' ) ); ?>
+		<?php the_content( __( 'Continue reading <span>&rarr;</span>', 'perspective' ) ); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'perspective' ),
+				'before' => '<div>' . __( 'Pages:', 'perspective' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -55,9 +55,9 @@
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span><?php comments_popup_link( __( 'Leave a comment', 'perspective' ), __( '1 Comment', 'perspective' ), __( '% Comments', 'perspective' ) ); ?></span>
+		<span><i class="icon-comment"></i> <?php comments_popup_link( __( 'Leave a comment', 'perspective' ), __( '1 Comment', 'perspective' ), __( '% Comments', 'perspective' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'perspective' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'perspective' ), '<span>', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

@@ -84,6 +84,7 @@ add_action( 'widgets_init', 'perspective_widgets_init' );
 function perspective_scripts() {
 	// Add stylesheets
 	wp_enqueue_style( 'perspective-style', get_template_directory_uri() . '/css/perspective.css', false, null );
+	wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', false, null );
 	
 	// Add scripts
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js', false, null, false);
