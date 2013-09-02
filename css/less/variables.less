@@ -2,6 +2,10 @@
    Variables
    ========================================================================== */
 
+// Import Fonts from google font directory
+// --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 // Global values
 // --------------------------------------------------
 @primaryColor:				#f16529;
@@ -22,11 +26,22 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        white;
-@textColor:             b;
+@bodyBackground:        	white;
+@textColor:             	black;
+
+// Buttons
+// -------------------------
+@buttonBackground:        	@secondaryColor;
+@buttonBackgroundHover:		@primaryColor;
+@buttonText:             	white;
+@buttonBorder:				black;
+@buttonBorderWidth:			0px;
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
-@monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+@fontFamily:        		'Open Sans', sans-serif;
+
+// Layout
+// -------------------------
+@wrapperWidth:				90%;
+@sideMargin:				100% - @wrapperWidth / 2;

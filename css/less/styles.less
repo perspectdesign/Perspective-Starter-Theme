@@ -1,9 +1,21 @@
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   Adapted by James Cartwright - @perspect_design
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px @fontFamily;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.4em;
 }
 
 body a {
@@ -17,8 +29,28 @@ body a:hover {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: @wrapperWidth;
+    margin: 0 @sideMargin;
+}
+
+main.archive h1, section.no-results h1, section.search-results h1 {
+	color: @secondaryColor;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+section.error h1 {
+	color: @secondaryColor;
+	font-size: 3.5em;
+	line-height: 1em;
+}
+
+section.no-results {
+	padding-bottom: 40px;
+}
+
+.comments ol {
+	list-style: none;
 }
 
 /* ===================
@@ -53,19 +85,27 @@ body a:hover {
 	color: white;
 }
 
+/* ===================
+    ALL: Orange Theme
+   =================== */
+   
+article a, .comments a, .error a {
+	color: @textColor;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */
 
-nav ul {
+nav.primary ul {
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+nav.primary ul li {
 	list-style: none;
 }
-nav a {
+nav.primary a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
@@ -78,12 +118,12 @@ nav a {
     background: @secondaryColor;
 }
 
-nav a:hover,
-nav a:visited {
+nav.primary a:hover,
+nav.primary a:visited {
     color: white;
 }
 
-nav a:hover {
+nav.primary a:hover {
 	text-decoration: @linkDecoration;
 }
 

@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 /*!
  * Perspective v0.0.1
  *
@@ -415,9 +416,19 @@ textarea {
 }
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   Adapted by James Cartwright - @perspect_design
    ========================================================================== */
 body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  font: 16px/26px 'Open Sans', sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.4em;
 }
 body a {
   color: #ffffff;
@@ -429,7 +440,25 @@ body a:hover {
 }
 .wrapper {
   width: 90%;
-  margin: 0 5%;
+  margin: 0 55%;
+}
+main.archive h1,
+section.no-results h1,
+section.search-results h1 {
+  color: #e44d26;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+section.error h1 {
+  color: #e44d26;
+  font-size: 3.5em;
+  line-height: 1em;
+}
+section.no-results {
+  padding-bottom: 40px;
+}
+.comments ol {
+  list-style: none;
 }
 /* ===================
     ALL: Orange Theme
@@ -456,17 +485,25 @@ body a:hover {
 .site-description {
   color: white;
 }
+/* ===================
+    ALL: Orange Theme
+   =================== */
+article a,
+.comments a,
+.error a {
+  color: #000000;
+}
 /* ==============
     MOBILE: Menu
    ============== */
-nav ul {
+nav.primary ul {
   margin: 0;
   padding: 0;
 }
-nav ul li {
+nav.primary ul li {
   list-style: none;
 }
-nav a {
+nav.primary a {
   display: block;
   margin-bottom: 10px;
   padding: 15px 0;
@@ -476,11 +513,11 @@ nav a {
   color: white;
   background: #e44d26;
 }
-nav a:hover,
-nav a:visited {
+nav.primary a:hover,
+nav.primary a:visited {
   color: white;
 }
-nav a:hover {
+nav.primary a:hover {
   text-decoration: none;
 }
 /* ==============
@@ -506,6 +543,39 @@ nav a:hover {
 .ie7 .title {
   padding-top: 20px;
 }
+textarea {
+  max-width: 100%;
+}
+input#submit {
+  background: #e44d26;
+  color: #ffffff;
+  padding: 4px 12px;
+  border: 0px solid #000000;
+}
+input#submit:hover {
+  background: #f16529;
+  color: #ffffff;
+  padding: 4px 12px;
+  border: 0px solid #000000;
+}
+.button-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+.widget {
+  padding-top: 20px;
+}
+.widget h2 {
+  margin: 0 0 0.2em 0;
+}
+.widget ul li {
+  list-style: none;
+}
 /* ==========================================================================
    Author's custom styles
    ========================================================================== *//* ==========================================================================
@@ -515,26 +585,26 @@ nav a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  nav a {
+  nav.primary a {
     float: left;
     width: 27%;
     margin: 0 1.7%;
     padding: 25px 2%;
     margin-bottom: 0;
   }
-  nav li:first-child a {
+  nav.primary li:first-child a {
     margin-left: 0;
   }
-  nav li:last-child a {
+  nav.primary li:last-child a {
     margin-right: 0;
   }
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  nav ul li {
+  nav.primary ul li {
     display: inline;
   }
-  .oldie nav a {
+  .oldie nav.primary a {
     margin: 0 0.7%;
   }
 }
@@ -554,10 +624,10 @@ nav a:hover {
   .banner {
     float: left;
   }
-  nav {
+  nav.primary {
     float: right;
     width: 38%;
-    margin-top: 40px;
+    margin-top: 60px;
   }
   /* ============
       WIDE: Main

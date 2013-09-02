@@ -13,7 +13,6 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
                 <?php do_action( 'mytheme_credits' ); ?>
                 <a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'perspective' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'perspective' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

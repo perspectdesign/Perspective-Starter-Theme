@@ -46,6 +46,11 @@ function perspective_setup() {
 	 * Enable support for Post Formats
 	 */
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	
+	/**
+	 * Enable support for HTML5 Forms
+	 */
+	add_theme_support('html5', array('search-form'));
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -67,8 +72,8 @@ function perspective_widgets_init() {
 		'id'            => 'sidebar-1',
 		'before_widget' => '<div class="widget">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
 	) );
 }
 add_action( 'widgets_init', 'perspective_widgets_init' );
