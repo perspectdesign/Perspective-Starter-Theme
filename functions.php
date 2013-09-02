@@ -75,6 +75,69 @@ function perspective_widgets_init() {
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Homepage Area Left', 'perspective' ),
+		'id'            => 'homepage-left',
+		'before_widget' => '<div class="column"><div class="widget">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Homepage Area Middle', 'perspective' ),
+		'id'            => 'homepage-middle',
+		'before_widget' => '<div class="column"><div class="widget">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Homepage Area Right', 'perspective' ),
+		'id'            => 'homepage-right',
+		'before_widget' => '<div class="column last"><div class="widget">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Homepage CTA 1', 'perspective' ),
+		'id'            => 'homepage-cta1',
+		'before_widget' => '<div class="cta-area">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Homepage CTA 2', 'perspective' ),
+		'id'            => 'homepage-cta2',
+		'before_widget' => '<div class="cta-area">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Homepage CTA 3', 'perspective' ),
+		'id'            => 'homepage-cta3',
+		'before_widget' => '<div class="cta-area">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Homepage CTA 4', 'perspective' ),
+		'id'            => 'homepage-cta4',
+		'before_widget' => '<div class="cta-area last">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'perspective_widgets_init' );
 

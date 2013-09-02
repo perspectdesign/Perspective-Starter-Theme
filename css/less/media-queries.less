@@ -54,7 +54,7 @@
    ==================== */
 
     .header-container,
-    .main aside {
+    .main aside, .main .column {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
@@ -74,6 +74,30 @@
     .main aside {
         float: @asideFloat;
         width: @asideWidth;
+    }
+    
+    .main .no-sidebar {
+	    width: 100%;
+    }
+    
+    .main .column {
+	    float: left;
+	    width: @columnWidth;
+	    margin-right: @columnMargin;
+    }
+    
+    .main .column.last {
+	    margin-right: 0;
+    }
+    
+    .main .cta-area {
+	    float: left;
+	    width: @ctaWidth;
+	    margin-right: @ctaMargin;
+    }
+    
+    .main .cta-area.last {
+	    margin-right: 0;
     }
 }
 

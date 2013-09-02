@@ -467,15 +467,19 @@ section.no-results {
   border-bottom: 20px solid #e44d26;
 }
 .footer-container,
-.main aside {
+.main aside,
+.main .column {
   border-top: 20px solid #e44d26;
 }
-.main aside {
+.main aside,
+.main .column,
+.main .cta-area {
   margin-bottom: 20px;
 }
 .header-container,
 .footer-container,
-.main aside {
+.main aside,
+.main .column {
   background: #f16529;
 }
 .title a {
@@ -531,7 +535,8 @@ nav.primary a:hover {
 .main article h1 {
   font-size: 2em;
 }
-.main aside {
+.main aside,
+.main .column {
   color: #ffffff;
   padding: 0px 5% 10px;
 }
@@ -623,7 +628,8 @@ input#submit:hover {
       WIDE: CSS3 Effects
      ==================== */
   .header-container,
-  .main aside {
+  .main aside,
+  .main .column {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;
@@ -639,6 +645,25 @@ input#submit:hover {
   .main aside {
     float: right;
     width: 28%;
+  }
+  .main .no-sidebar {
+    width: 100%;
+  }
+  .main .column {
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+  }
+  .main .column.last {
+    margin-right: 0;
+  }
+  .main .cta-area {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+  }
+  .main .cta-area.last {
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 1140px) {
@@ -716,6 +741,12 @@ input#submit:hover {
 }
 .clearfix {
   *zoom: 1;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
 }
 /* ==========================================================================
    Print styles
