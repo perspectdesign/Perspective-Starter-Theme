@@ -8,7 +8,7 @@
 	<header>
 		<h1><?php the_title(); ?></h1>
 
-		<div>
+		<div class="post-info">
 			<i class="icon-time"></i> <?php perspective_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

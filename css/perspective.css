@@ -490,6 +490,10 @@ article a,
 .error a {
   color: #000000;
 }
+.post-info {
+  background: #eeeeee;
+  padding-left: 5px;
+}
 /* ==============
     MOBILE: Menu
    ============== */

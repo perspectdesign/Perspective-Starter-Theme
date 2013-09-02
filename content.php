@@ -9,7 +9,7 @@
 		<h1><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div>
+		<div class="post-info">
 			<i class="icon-time"></i> <?php perspective_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
