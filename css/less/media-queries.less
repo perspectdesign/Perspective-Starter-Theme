@@ -10,7 +10,7 @@
 
     nav.primary a {
         float: left;
-        width: 27%;
+        width: @linkWidthInt;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -55,12 +55,12 @@
    ============ */
 
     .banner {
-        float: left;
+        float: @bannerFloat;
     }
 
     nav.primary {
-        float: right;
-        width: 38%;
+        float: @navFloat;
+        width: @navWidthWide;
 		margin-top: 60px;
     }
 
@@ -69,13 +69,13 @@
    ============ */
 
     .main main {
-        float: left;
-        width: 57%;
+	    float: @mainFloat;
+        width: @mainWidth;
     }
 
     .main aside {
-        float: right;
-        width: 28%;
+        float: @asideFloat;
+        width: @asideWidth;
     }
 }
 
@@ -86,7 +86,7 @@
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: @maxWidth;
         margin: 0 auto;
     }
 }

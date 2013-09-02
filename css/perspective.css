@@ -367,7 +367,7 @@ table {
 /* ==========================================================================
    Variables
    ========================================================================== */
-/* ==========================================================================
+/* 1140px - 10% for margins *//* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 html,
@@ -440,7 +440,7 @@ body a:hover {
 }
 .wrapper {
   width: 90%;
-  margin: 0 55%;
+  margin: 0 5%;
 }
 main.archive h1,
 section.no-results h1,
@@ -461,7 +461,7 @@ section.no-results {
   list-style: none;
 }
 /* ===================
-    ALL: Orange Theme
+    ALL: Perspective Theme
    =================== */
 .header-container {
   border-bottom: 20px solid #e44d26;
@@ -479,15 +479,12 @@ section.no-results {
   background: #f16529;
 }
 .title a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 .site-description {
-  color: white;
+  color: #ffffff;
 }
-/* ===================
-    ALL: Orange Theme
-   =================== */
 article a,
 .comments a,
 .error a {
@@ -510,12 +507,11 @@ nav.primary a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   background: #e44d26;
 }
-nav.primary a:hover,
-nav.primary a:visited {
-  color: white;
+nav.primary a:hover {
+  color: #ffffff;
 }
 nav.primary a:hover {
   text-decoration: none;
@@ -530,11 +526,11 @@ nav.primary a:hover {
   font-size: 2em;
 }
 .main aside {
-  color: white;
+  color: #ffffff;
   padding: 0px 5% 10px;
 }
 .footer-container footer {
-  color: white;
+  color: #ffffff;
   padding: 20px 0;
 }
 /* ===============
@@ -647,8 +643,6 @@ input#submit:hover {
      =============== */
   .wrapper {
     width: 1026px;
-    /* 1140px - 10% for margins */
-  
     margin: 0 auto;
   }
 }

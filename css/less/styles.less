@@ -54,7 +54,7 @@ section.no-results {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Perspective Theme
    =================== */
 
 .header-container {
@@ -77,20 +77,16 @@ section.no-results {
 }
 
 .title a {
-    color: white;
+    color: @titleColor;
     text-decoration: none;
 }
 
 .site-description {
-	color: white;
+	color: @titleColor;
 }
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
    
 article a, .comments a, .error a {
-	color: @textColor;
+	color: @altLinkColor;
 }
 
 /* ==============
@@ -114,13 +110,12 @@ nav.primary a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
+    color: @linkColor;
     background: @secondaryColor;
 }
 
-nav.primary a:hover,
-nav.primary a:visited {
-    color: white;
+nav.primary a:hover, {
+    color: @linkTextHoverColor;
 }
 
 nav.primary a:hover {
@@ -140,12 +135,12 @@ nav.primary a:hover {
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
+    color: @asideTextColor;
+    padding: 0px @asidePadding 10px;
 }
 
 .footer-container footer {
-    color: white;
+    color: @asideTextColor;
     padding: 20px 0;
 }
 
