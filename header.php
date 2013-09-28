@@ -29,14 +29,23 @@
 	
 	<div class="header-container">
 		<?php do_action( 'before' ); ?>
-	    <header class="wrapper clearfix">
-	        <div class="banner">
+		<nav class="primary">
+        	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        </nav>
+	    <header class="wrapper clearfix">	        
+	        <div class="ribbon">
+	        	<div class="ribbonbar"></div>
+	        	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Perspective Design">
+	        </div>
+	        <div class="est-wrap">
+	        	<img class="est" src="<?php echo get_stylesheet_directory_uri(); ?>/img/est.png" alt="est">
+	        </div>
+        
+	        <div class="banner visuallyhidden">
 		        <h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 	        </div>
-	        <nav class="primary">
-	        	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-	        </nav>
+	        
 	    </header>
 	</div><!-- End Header Section -->
 

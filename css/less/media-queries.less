@@ -12,6 +12,7 @@
 		background-color: @secondaryColor;
 		width: 100%;
 		float: left;
+		display: inline;
 	}    
 	
     nav.primary a {
@@ -53,14 +54,47 @@
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
+    .header-container {
+    	background: none;
+	}
+    
     .main aside, .main .column {
         -webkit-box-shadow: 0 5px 10px #aaa;
            -moz-box-shadow: 0 5px 10px #aaa;
                 box-shadow: 0 5px 10px #aaa;
     }
+    
+    header.wrapper {
+	    background: url(../img/header.jpg) left top repeat;
+	    width: @wrapperWidth;
+		margin: 0 @sideMargin;
+    }
+    
+    .ribbon {
+		padding-top: 40px;
+		height: 293px;
+	}
 
-/* WIDE: Menu (moved to  min-width: 1140px) */
+	.ribbonbar {
+		background: @primaryColor;
+		height: 146.5px;
+		position: relative;
+		top: 73px;
+	}
+
+	.logo {
+		position: relative;
+		top: -146.5px;
+		height: 294px;
+		width: 293px;
+	}
+	
+	.est {
+		width: 394px;
+		height: 70px;
+	}
+
+/* WIDE: Menu (moved to min-width: 1140px) */
 
 /* ============
     WIDE: Main
@@ -120,7 +154,7 @@
         float: @bannerFloat;
     }
 
-    nav.primary {
+    /* nav.primary {
         float: @navFloat;
         width: @navWidthWide;
 		margin-top: 60px;
@@ -129,5 +163,5 @@
     nav.primary a {
 	    padding-top: 30px;
 	    padding-bottom: 30px;
-    }
+    } */
 }

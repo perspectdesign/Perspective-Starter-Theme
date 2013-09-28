@@ -436,21 +436,25 @@ body a {
   text-decoration: none;
 }
 body a:hover {
-  color: #e44d26;
+  color: #2c3e50;
 }
 .wrapper {
   width: 90%;
   margin: 0 5%;
 }
+header.wrapper {
+  margin: 0;
+  width: 100%;
+}
 main.archive h1,
 section.no-results h1,
 section.search-results h1 {
-  color: #e44d26;
+  color: #2c3e50;
   font-size: 2.5em;
   line-height: 1em;
 }
 section.error h1 {
-  color: #e44d26;
+  color: #2c3e50;
   font-size: 3.5em;
   line-height: 1em;
 }
@@ -464,23 +468,48 @@ section.no-results {
     ALL: Perspective Theme
    =================== */
 .header-container {
-  border-bottom: 20px solid #e44d26;
+  background: #2d2d2d;
+}
+.ribbon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  height: 146px;
+}
+.ribbonbar {
+  background: #2980b9;
+  height: 73px;
+  position: relative;
+  top: 36px;
+}
+.logo {
+  position: relative;
+  top: -73px;
+  height: 146px;
+  width: 146px;
+}
+.est-wrap {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.est {
+  width: 80%;
 }
 .footer-container,
 .main aside,
 .main .column {
-  border-top: 20px solid #e44d26;
+  border-top: 20px solid #2c3e50;
 }
 .main aside,
 .main .column,
 .main .cta-area {
   margin-bottom: 20px;
 }
-.header-container,
 .footer-container,
 .main aside,
 .main .column {
-  background: #f16529;
+  background: #2980b9;
 }
 .title a {
   color: #ffffff;
@@ -502,6 +531,9 @@ article footer {
 /* ==============
     MOBILE: Menu
    ============== */
+nav.primary {
+  display: none;
+}
 nav.primary ul {
   margin: 0;
   padding: 0;
@@ -517,14 +549,14 @@ nav.primary a {
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
-  background: #e44d26;
+  background: #2c3e50;
 }
 nav.primary a:hover {
   color: #ffffff;
 }
 nav.primary a:hover {
   text-decoration: none;
-  background: #f16529;
+  background: #2980b9;
 }
 /* ==============
     MOBILE: Main
@@ -554,13 +586,13 @@ textarea {
   max-width: 100%;
 }
 input#submit {
-  background: #e44d26;
+  background: #2c3e50;
   color: #ffffff;
   padding: 4px 12px;
   border: 0px solid #000000;
 }
 input#submit:hover {
-  background: #f16529;
+  background: #2980b9;
   color: #ffffff;
   padding: 4px 12px;
   border: 0px solid #000000;
@@ -593,9 +625,10 @@ input#submit:hover {
       INTERMEDIATE: Menu
      ==================== */
   nav.primary {
-    background-color: #e44d26;
+    background-color: #2c3e50;
     width: 100%;
     float: left;
+    display: inline;
   }
   nav.primary a {
     float: left;
@@ -627,14 +660,41 @@ input#submit:hover {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  .header-container,
+  .header-container {
+    background: none;
+  }
   .main aside,
   .main .column {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;
   }
-  /* WIDE: Menu (moved to  min-width: 1140px) */
+  header.wrapper {
+    background: url(../img/header.jpg) left top repeat;
+    width: 90%;
+    margin: 0 5%;
+  }
+  .ribbon {
+    padding-top: 40px;
+    height: 293px;
+  }
+  .ribbonbar {
+    background: #2980b9;
+    height: 146.5px;
+    position: relative;
+    top: 73px;
+  }
+  .logo {
+    position: relative;
+    top: -146.5px;
+    height: 294px;
+    width: 293px;
+  }
+  .est {
+    width: 394px;
+    height: 70px;
+  }
+  /* WIDE: Menu (moved to min-width: 1140px) */
   /* ============
       WIDE: Main
      ============ */
@@ -680,15 +740,16 @@ input#submit:hover {
   .banner {
     float: left;
   }
-  nav.primary {
-    float: right;
-    width: auto;
-    margin-top: 60px;
-  }
-  nav.primary a {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+  /* nav.primary {
+          float: @navFloat;
+          width: @navWidthWide;
+  		margin-top: 60px;
+      }
+      
+      nav.primary a {
+  	    padding-top: 30px;
+  	    padding-bottom: 30px;
+      } */
 }
 /* ==========================================================================
    Helper classes

@@ -33,6 +33,11 @@ body a:hover {
     margin: 0 @sideMargin;
 }
 
+header.wrapper {
+	margin: 0;
+	width: 100%;
+}
+
 main.archive h1, section.no-results h1, section.search-results h1 {
 	color: @secondaryColor;
 	font-size: 2.5em;
@@ -58,7 +63,38 @@ section.no-results {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid @secondaryColor;
+    background: @headerback;
+}
+
+.ribbon {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	height: 146px;
+	}
+
+.ribbonbar {
+	background: @primaryColor;
+	height: 73px;
+	position: relative;
+	top: 36px;
+}
+
+.logo {
+	position: relative;
+	top: -73px;
+	height: 146px;
+	width: 146px;
+}
+
+.est-wrap {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.est {
+	width: 80%;
 }
 
 .footer-container,
@@ -71,7 +107,6 @@ section.no-results {
 	margin-bottom: 20px;
 }
 
-.header-container,
 .footer-container,
 .main aside,
 .main .column {
@@ -99,6 +134,10 @@ article a, .comments a, .error a {
 /* ==============
     MOBILE: Menu
    ============== */
+
+nav.primary {
+	display: none;
+}
 
 nav.primary ul {
     margin: 0;
