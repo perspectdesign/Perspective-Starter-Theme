@@ -40,14 +40,19 @@
 	        <div class="est-wrap">
 	        	<img class="est" src="<?php echo get_stylesheet_directory_uri(); ?>/img/est.png" alt="est">
 	        </div>
+	        <div class="margin"></div>
         
 	        <div class="banner visuallyhidden">
 		        <h1 class="title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		        <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 	        </div>
-	        
+	        	        
 	    </header>
 	</div><!-- End Header Section -->
 
     <div class="main-container">
+    	<div class="request">
+	      	<a class="request-button">Request a Quote</a>
+	    </div>
+	    
         <div class="main wrapper clearfix">

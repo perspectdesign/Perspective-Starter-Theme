@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn);
 /*!
  * Perspective v0.0.1
  *
@@ -419,7 +419,7 @@ textarea {
    Adapted by James Cartwright - @perspect_design
    ========================================================================== */
 body {
-  font: 16px/26px 'Open Sans', sans-serif;
+  font: 16px/26px 'Vollkorn', serif;
 }
 h1 {
   text-transform: uppercase;
@@ -495,6 +495,10 @@ section.no-results {
 }
 .est {
   width: 80%;
+}
+header .margin {
+  height: 15px;
+  background: url(../img/triangle-small.png) repeat-x #ffffff;
 }
 .footer-container,
 .main aside,
@@ -617,7 +621,25 @@ input#submit:hover {
 }
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== *//* ==========================================================================
+   ========================================================================== */
+.request-button {
+  background: #2980b9;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+.request-button:hover {
+  background: #2c3e50;
+  color: white;
+}
+.request {
+  padding: 20px 0;
+  text-align: center;
+}
+/* ==========================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (min-width: 480px) {
@@ -664,7 +686,8 @@ input#submit:hover {
     background: none;
   }
   .main aside,
-  .main .column {
+  .main .column,
+  .request-button {
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;
@@ -693,6 +716,9 @@ input#submit:hover {
   .est {
     width: 394px;
     height: 70px;
+  }
+  header .margin {
+    background: url(../img/triangle-texture-small.png) repeat-x #ffffff;
   }
   /* WIDE: Menu (moved to min-width: 1140px) */
   /* ============
